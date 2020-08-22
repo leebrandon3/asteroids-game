@@ -1,0 +1,25 @@
+2020-05-13T16:34:29.572508600255-16:34:29 **** Incremental Build of configuration Debug for project Final_Project ****
+000-make all 
+000-make --no-print-directory pre-build
+000-a9-linaro-pre-build-step
+000-' '
+000-make --no-print-directory main-build
+000-'Building file: ../src/main.cc'
+000-'Invoking: ARM v7 g++ compiler'
+000-arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -ID:/SchoolSoftware/Xilinx/EE379BSP2/export/EE379BSP2/sw/EE379BSP2/standalone_domain/bspinclude/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+000-'Finished building: ../src/main.cc'
+000-' '
+000-'Building target: Final_Project.elf'
+000-'Invoking: ARM v7 g++ linker'
+000-arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LD:/SchoolSoftware/Xilinx/EE379BSP2/export/EE379BSP2/sw/EE379BSP2/standalone_domain/bsplib/lib -o "Final_Project.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+000-'Finished building target: Final_Project.elf'
+000-' '
+000-'Invoking: ARM v7 Print Size'
+000-arm-none-eabi-size Final_Project.elf  |tee "Final_Project.elf.size"
+000-   text	   data	    bss	    dec	    hex	filename
+000-  82896	   3084	  25396	 111376	  1b310	Final_Project.elf
+000-'Finished building: Final_Project.elf.size'
+000-' '
+00255-
+16:34:33 Build Finished (took 3s.632ms)
+
